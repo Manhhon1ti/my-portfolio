@@ -1,0 +1,50 @@
+@use '../../../utils' as *;
+/*----------------------------------------*/
+/*   3.3 Brand Style
+/*----------------------------------------*/
+
+.cnt-brand{
+    &-style{
+        &.ar-brand-style{
+            & .tp-brand-title{
+                font-size: 18px;
+                font-family: var(--tp-ff-inter);
+                &::after{
+                    width: 12px;
+                    height: 12px;
+                    transform: translateY(-1px);
+                    background-color: transparent;
+                    border: 3px solid var(--tp-common-white);
+                }
+            }
+        }
+    }
+}
+
+
+.ais-brand{
+    &-blur{
+        padding: 30px 0;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 230px;
+            z-index: 1;
+            background: linear-gradient(-270deg, rgba(253, 252, 254, 0.00) 3.5%, #FDFCFE 100%);
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 230px;
+            z-index: 2;
+            background: linear-gradient(270deg, rgba(253, 252, 254, 0.00) 3.5%, #FDFCFE 100%);
+        }
+    }
+}

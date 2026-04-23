@@ -1,0 +1,165 @@
+@use '../../../utils' as *;
+/*----------------------------------------*/
+/*   3.4 Footer Style
+/*----------------------------------------*/
+
+
+.cst-footer{
+    &-ptb{
+        margin-top: -190px;
+        padding-top: 280px;
+        @media #{$xxl} {
+            margin-top: -100px;
+        }
+        @media #{$xl,$lg,$md,$xs} {
+            margin-top: 0px;
+        }
+        @media #{$lg,$md,$xs} {
+            margin-top: 100px;
+        }
+        @media #{$md,$xs} {
+            padding-top: 100px;
+        }
+    }
+    &-wrap{
+        @media #{$md,$xs} {
+            padding-bottom: 0;
+        }
+    }
+    &-style{
+        & .dgm-footer-widget{
+            &-paragraph {
+                & p{
+                    color: #CED4E9;
+                }
+                &.color-style{
+                    & p{
+                        color: #CED4E9;
+                    }
+                }
+            }
+            &-title{
+                color: var(--tp-common-white);
+            }
+            &-menu{
+                & ul{
+                    & li{
+                        & a{
+                            color: #CED4E9;
+                            &:hover{
+                                color: var(--tp-common-white);
+                            }
+                        }
+                    }
+                }
+            }
+            &-input{
+                & input{
+                    color: var(--tp-common-white);
+                    background-color: transparent;
+                    border-color: rgba(255, 255, 255, 0.10);
+                    &:focus{
+                        border-color: var(--tp-common-white);
+                    }
+                }
+                & .input-button{
+                    & .tp-btn-gradient.sm{
+                        color: var(--tp-common-black-7);
+                        background: var(--tp-common-green-1);
+                    }
+                }
+            }
+        }
+        & .app-footer{
+            &-rating{
+                border-radius: 12px;
+                border: 1px solid rgba(255, 255, 255, 0.10);
+                background: rgba(255, 255, 255, 0.03);
+                & span,
+                & a{
+                    color: var(--tp-common-white);
+                }
+            }
+            &-widget{
+                &-info{
+                    &-title{
+                        color: #CED4E9;
+                    }
+                    & a{
+                        color: var(--tp-common-white);
+                    }
+                }
+            }
+        }
+        & .app-copyright-text {
+            & p{
+                color: #CED4E9;
+                & a{
+                    &:hover{
+                        border-color: var(--tp-common-white);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.ais-footer{
+    &-style{
+        & .crp-footer{
+            &-widget {
+                @media #{$xs} {
+                    margin-bottom: 40px;
+                }
+                & p{
+                    color: #61616A;
+                }
+                &-title{
+                    font-size: 26px;
+                    font-weight: 500;
+                    color: var(--tp-common-black-7);
+                    font-family: var(--tp-ff-inter);
+                }
+                &-menu {
+                    & ul {
+                        & li {
+                            & a{
+                                color: #61616A;
+                            }
+                        }
+                    }
+                }
+                &-info{
+                    & a{
+                        color: #61616A;
+                        &.tel{
+                            color: var(--tp-common-black-7);
+                        }
+                    }
+                }
+            }
+            &-social{
+                & a{
+                    color: var(--tp-common-black-7);
+                    border: 1px solid rgba(116, 99, 255, 0.10);
+                    &:hover{
+                        color: var(--tp-common-white);
+                        background-color: var(--tp-common-blue);
+                    }
+                }
+            }
+        }
+    }
+    &-copyright{
+        border-top: 1px solid rgba($color: #050312, $alpha: 0.1);
+        & p{
+            color: #61616A;
+            & a{
+                & span{
+                    color: var(--tp-common-black-7);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+@use '../../../utils' as *;
+/*----------------------------------------*/
+/*   3.2 About Style
+/*----------------------------------------*/
+
+.cst-about{
+    &-ptb{
+        @media #{$md,$xs} {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+    }
+    &-shape{
+        position: absolute;
+        top: 50%;
+        left: -5%;
+        transform: translateY(-50%);
+        @media #{$x4l} {
+            left: -10%;
+        }
+        @media #{$x3l} {
+            left: -12%;
+        }
+        @media #{$xxl} {
+            left: -18%;
+        }
+        & img{
+            mix-blend-mode: soft-light;
+        }
+    }
+    &-heading{
+        & .cst-section-title{
+            & img{
+                @media #{$xs} {
+                    display: none;
+                }
+            }
+        }
+    }
+    &-list{
+        & ul{
+            & li{
+                gap: 15px;
+                display: flex;
+                list-style: none;
+                margin-bottom: 20px;
+                @media #{$md,$xs} {
+                    margin-bottom: 12px;
+                }
+                & span{
+                    display: grid;
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    place-content: center;
+                    background-color: var(--tp-common-green-1);
+                }
+            }
+        }
+    }
+    &-text{
+        & p{
+            @media #{$md,$xs} {
+                margin-bottom: 20px;
+            }
+            & br{
+                @media #{$lg,$md,$xs} {
+                    display: none;
+                }
+            }
+            & span{
+                color: var(--tp-common-black-7);
+            }
+        }
+    }
+    &-thumb{
+        & img{
+            border-radius: 8px;
+        }
+    }
+    &-right{
+        margin-left: -120px;
+        @media #{$xl,$lg,$md,$xs} {
+            margin-left: 0;
+        }
+    }
+}
+
+.cst-border-b{
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.cnt-about{
+    &-style{
+        position: relative;
+        @media #{$xs} {
+            padding-top: 0;
+        }
+        & .ar-about{
+            &-top-img{
+                & img{
+                    border-radius: 16px;
+                }
+            }
+            &-thumb{
+                border-radius: 16px;
+                & img{
+                    margin-top: -10px;
+                }
+            }
+            &-shape{
+                bottom: 140px;
+                left: 60px;
+                z-index: -1;
+            }
+        }
+    }
+}

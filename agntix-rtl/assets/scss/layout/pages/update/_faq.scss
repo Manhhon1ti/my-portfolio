@@ -1,0 +1,79 @@
+@use '../../../utils' as *;
+/*----------------------------------------*/
+/*   3.4 Faq Style
+/*----------------------------------------*/
+
+.cst-faq{
+    &-ptb{
+        @media #{$md,$xs} {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+    }
+    &-heading{
+        & .cst-section-title{
+            @media #{$md,$xs} {
+                margin-bottom: 25px;
+            }
+        }
+    }
+    &-wrap{
+        @media #{$xl,$lg,$md,$xs} {
+            padding-left: 0;
+        }
+        & .ai-faq-accordion-wrap{
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            & .accordion-items{
+                padding-left: 0;
+            }
+            & .accordion-header {
+                & .accordion-buttons {
+                    & .accordion-icon{
+                        left: auto;
+                        right: 0;
+                    }
+                }
+            }
+            & .accordion-body{
+                padding-right: 30px;
+            }
+        }
+    }
+}
+
+
+.cnt-faq{
+    &-ptb{
+        @media #{$xl,$lg,$md,$xs} {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+    }
+    &-wrap{
+        & .ar-award-year{
+            @media #{$lg} {
+                min-width: 85px;
+            }
+            @media #{$xs} {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    &-heading{
+        & .tp-section-title{
+            &-clash-600{
+                &.fs-60{
+                    font-size: 56px;
+                    @media #{$lg,$md,$xs} {
+                        font-size: 40px;
+                        padding-bottom: 20px;
+                        & br{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

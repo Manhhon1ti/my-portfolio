@@ -1,0 +1,334 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  8.0 rtl Css
+/*----------------------------------------*/
+
+.tp-header-btn-box{
+    & .tp-btn-black-radius.btn-blue-bg.btn-style-ai{
+        margin-left: 0;
+    }
+}
+.ais-header-btn a span {
+	margin-left: 0;
+	margin-right: 8px;
+}
+.ais-hero-shapes {
+    & .shape-1 {
+        left: 10%;
+        right: auto;
+        @media #{$xl,$lg} {
+            left: 0;
+        }
+    }
+    & .shape-2 {
+        right: 4%;
+        left: auto;
+    }
+    & .shape-3 {
+        left: 12%;
+        right: auto;
+    }
+}
+.ais-hero-thumb-shapes {
+    & .shape-1 {
+        right: -16%;
+        left: auto;
+        @media #{$x3l} {
+            right: -12%;
+        }
+        @media #{$xxl,$xl} {
+            right: -6%;
+        }
+        @media #{$lg} {
+            right: 0;
+        }
+    }
+    & .shape-2 {
+        right: -8%;
+        left: auto;
+        @media #{$xxl,$xl} {
+            right: 0;
+        }
+    }
+    & .shape-3 {
+        left: -13%;
+        right: auto;
+        @media #{$x3l} {
+            left: -8%;
+        }
+        @media #{$xxl,$xl} {
+            left: -2%;
+        }
+    }
+    & .shape-4 {
+        left: -16%;
+        right: auto;
+        @media #{$x3l} {
+            left: -10%;
+        }
+        @media #{$xxl,$xl} {
+            left: -6%;
+        }
+    }
+}
+.ais-feature-shape {
+	left: 12%;
+	right: auto;
+    @media #{$lg,$md,$xs} {
+        display: none;
+    }
+}
+.ais-feature-item-btn a span {
+	margin-right: 4px;
+	margin-left: 0;
+}
+.ais-exp-shape-3 {
+	left: -24%;
+	right: auto;
+    @media #{$x3l} {
+        left: -8%;
+    }
+    @media #{$xxl} {
+        left: -5%;
+    }
+    @media #{$xl} {
+        left: -4%;
+    }
+    @media #{$lg} {
+        left: -2%;
+    }
+}
+.ais-exp-thumb-shapes .shape-1 {
+	right: -13%;
+	left: auto;
+}
+.ais-exp-thumb-shapes .shape-2 {
+	left: 5%;
+	right: auto;
+}
+.ais-service-shape {
+	right: -5%;
+	left: auto;
+}
+.ais-list-thumb-wrapper {
+	margin-left: 80px;
+	margin-right: 0;
+    @media #{$xl,$lg,$md,$xs} {
+        margin-left: 0;
+    }
+}
+.ais-cta{
+    &-shapes{
+        & .shape{
+            &-1{
+                left: auto;
+                right: 20%;
+            }
+            &-2{
+                left: auto;
+                right: 9%;
+            }
+            &-3{
+                right: auto;
+                left: 28%;
+            }
+            &-4{
+                right: auto;
+                left: 11%;
+                transform: scaleX(-1);
+                @media #{$lg} {
+                    left: 6%;
+                }
+            }
+            &-5{
+                right: auto;
+                left: 10%;
+            }
+        }
+    }
+    &-wrapper::after{
+        left: -15%;
+        right: auto;
+    }
+}
+.cst-hero-thumb-shapes{
+    & .shape{
+        &-1{
+            left: 0;
+            right: -120px;
+            @media #{$x3l,$xxl,$xl,$lg,$md} {
+                right: 0;
+            }
+        }
+        &-2{
+            right: auto;
+            left: 50px;
+        }
+    }
+}
+.cst-hero-wrapper {
+	margin-right: 55px;
+	margin-left: 0;
+    @media #{$xxl,$xl,$lg,$md,$xs} {
+        margin-right: 0;
+    }
+}
+.cst-hero-left {
+	margin-left: 30px;
+	margin-right: 0;
+}
+.cst-hero-right {
+	padding-right: 30px;
+	border-left: none;
+	padding-left: 0;
+	border-right: 1px solid rgba(255, 255, 255, 0.1);
+     @media #{$xs} {
+        padding-right: 0;
+        border-right: none;
+    }
+}
+.cst-hero-wrapper .shape-1 {
+	left: 0;
+	right: auto;
+	transform: scaleX(-1);
+}
+.cst-about-shape {
+    right: -5%;
+	left: auto;
+    transform: scaleX(-1);
+}
+.cst-about-right {
+	margin-right: -120px;
+	margin-left: 0;
+    @media #{$xl,$lg,$md,$xs} {
+        margin-right: 0;
+    }
+}
+.cst-btn span svg {
+	margin-right: 4px;
+	margin-left: 0;
+}
+.cst-feature-text span {
+	display: inline-block;
+}
+.cst-faq-wrap .ai-faq-accordion-wrap .accordion-body {
+	padding-left: 30px;
+    padding-right: 0;
+}
+.cst-faq-wrap .ai-faq-accordion-wrap .accordion-header .accordion-buttons .accordion-icon {
+	right: auto;
+	left: 15px;
+}
+.cst-faq-wrap .ai-faq-accordion-wrap .accordion-items {
+	padding-right: 0;
+	padding-left: 40px;
+}
+.cst-testimonial-item-shape {
+	left: 30px;
+	right: auto;
+	transform: scaleX(-1);
+	transition: all 0.5s ease-in-out;
+}
+.cst-testimonial-item:hover .cst-testimonial-item-shape {
+    left: 20px;
+}
+.tp-testimonial-ratting .mr-15{
+    margin-right: 0;
+    margin-left: 15px;
+    transform: scaleX(-1);
+}
+.tp-header-13-menu.cst-menu > nav > ul {
+	margin-right: 0;
+	margin-left: 0;
+}
+.cst-testimonial-slider-wrapper .dgm-testimonial-dot{
+    padding-right: 39%;
+    @media #{$xxl,$xl} {
+        padding-right: 37%;
+    }
+    @media #{$lg} {
+        padding-right: 35%;
+    }
+    @media #{$md} {
+        padding-right: 30%;
+    }
+}
+.cst-testimonial-slider-wrapper{
+    margin-right: 0;
+    margin-left: -300px;
+     @media #{$xs} {
+        margin-left: 0;
+    }
+}
+.tp-header-cnt-wrap{
+    & .tp-header-logo{
+        margin-right: 0;
+        margin-left: 40px;
+    }
+}
+.tp-header-cnt-bar-wrap .tp-header-bar {
+	padding-right: 20px;
+	margin-left: 20px;
+	padding-left: 0;
+	margin-right: 0;
+	border-left: none;
+	border-right: 1px solid rgba(5, 3, 18, 0.2);
+    @media #{$md,$xs} {
+        border: none;
+    }
+}
+.tp-header-cnt-bar-wrap .tp-header-8-lang {
+    padding-left: 0;
+	padding-right: 20px;
+	border-left: none;
+	border-right: 1px solid rgba(5, 3, 18, 0.2);
+}
+.tp-header-cnt-bar-wrap .tp-header-bar span {
+    margin-left: 0;
+	margin-right: 8px;
+}
+.cnt-hero-shape {
+	left: 25%;
+	right: auto;
+    transform: scaleX(-1);
+}
+.cnt-hero-list-num {
+	margin-left: 40px;
+	margin-right: 0;
+}
+.tp-btn-black-square.cnt-btn-style {
+	padding: 9px 22px 9px 9px;
+}
+.tp-btn-black-square.cnt-btn-style.style-2 {
+	padding: 9px 9px 9px 22px;
+}
+.cnt-portfolio-video-sub::before {
+	margin-left: 5px;
+	margin-right: 0;
+}
+.cnt-team-item-social a .bdr-1 {
+	margin-left: -5px;
+	margin-right: 0;
+}
+.cnt-blog-item-content {
+	right: 60px;
+	left: auto;
+}
+.cnt-hero-main-thumb{
+    & img{
+        @media #{$x3l} {
+            transform: translateX(50px);
+        }
+        @media #{$xxl} {
+            transform: translateX(100px);
+        }
+        @media #{$lg} {
+            transform: scale(.7) translateX(150px);
+        }
+    }
+}
+.cnt-hero-title {
+	margin-left: 0;
+	margin-right: -4px;
+}
