@@ -4562,7 +4562,7 @@ body.tp-magic-cursor #magic-cursor {
   opacity: 0;
   visibility: hidden;
   padding: 0 5px;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 500;
   line-height: 1.3;
   text-align: center;
@@ -14800,6 +14800,7 @@ body.tp-magic-cursor #magic-cursor {
   z-index: -1;
 }
 
+
 .creative-2-hero-title {
   font-weight: 600;
   font-size: 100px;
@@ -18656,7 +18657,7 @@ body.tp-magic-cursor #magic-cursor {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(20, 20, 20, 0.3);
+  background-color: rgba(20, 20, 20, 0.1);
 }
 .ar-service-title {
   font-size: 18px;
