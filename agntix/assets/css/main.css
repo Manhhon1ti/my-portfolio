@@ -13458,7 +13458,7 @@ body.tp-magic-cursor #magic-cursor {
   vertical-align: middle;
   line-height: 0;
   position: relative;
-  top: -0.05em;
+  top: -0.1em;
 }
 .ar-hero-title {
   font-size: clamp(42px, 8.5vw, 120px);
@@ -13529,34 +13529,34 @@ body.tp-magic-cursor #magic-cursor {
 }
 .ar-hero-shape-1 {
   margin-right: 16px;
-  transform: translateY(-20px);
+  transform: translateY(0);
   transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
   border-radius: 60px;
   overflow: hidden;
 }
 .ar-hero-shape-1:hover {
-  transform: translateY(-24px) scale(1.05);
+  transform: translateY(-4px) scale(1.05);
   box-shadow: 0 8px 32px rgba(0,0,0,0.22);
 }
 .ar-hero-shape-2 {
-  transform: translateY(-8px);
+  transform: translateY(0);
   transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
   border-radius: 60px;
   overflow: hidden;
 }
 .ar-hero-shape-2:hover {
-  transform: translateY(-13px) scale(1.05);
+  transform: translateY(-4px) scale(1.05);
   box-shadow: 0 8px 32px rgba(0,0,0,0.22);
 }
 .ar-hero-shape-3 {
   margin-left: 16px;
-  transform: translateY(-20px);
+  transform: translateY(0);
   transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
   border-radius: 60px;
   overflow: hidden;
 }
 .ar-hero-shape-3:hover {
-  transform: translateY(-24px) scale(1.05);
+  transform: translateY(-4px) scale(1.05);
   box-shadow: 0 8px 32px rgba(0,0,0,0.22);
 }
 @media (max-width: 767px) {
